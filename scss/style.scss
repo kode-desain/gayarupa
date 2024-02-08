@@ -1,0 +1,168 @@
+@use "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: variables.$font-popins;
+}
+
+section {
+  width: 100%;
+  padding: 64px 0;
+
+  .container {
+    position: relative;
+    padding: 0 80px;
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .left-column, .right-column {
+        max-width: 50%;
+      }
+
+      .left-column {
+        display: flex;
+        flex-direction: column;
+
+        .hero-caption {
+          font-size: variables.$p12;
+          line-height: 14px;
+          margin-bottom: 24px;
+        }
+
+        .hero-title {
+          font-size: variables.$h2;
+          line-height: 62px;
+          margin-bottom: 24px;
+        }
+
+        .hero-text {
+          width: 80%;
+          font-size: variables.$p16;
+          line-height: 26px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .right-column {
+        .hero-image {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &.feature {
+    .flex-container {
+      align-items: flex-end;
+      gap: 24px;
+    }
+  }
+
+  &.special-offer {
+    .flex-container {
+      gap: 126px;
+    }
+
+    * {
+      margin-bottom: 24px;
+    }
+
+    .offer-detail {
+      h4 {
+        font-size: variables.$h4;
+      }
+
+      h5 {
+        font-size: variables.$h5;
+      }
+    }
+  }
+}
+
+.heading {
+  margin-bottom: 64px;
+
+  .heading-title {
+    h3 {
+      font-size: variables.$h4;
+    }
+  }
+
+  .heading-tagline {
+    p {
+      font-size: variables.$h5;
+    }
+  }
+}
+
+.feature-card {
+  width: auto;
+
+  img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .label {
+    h3 {
+      font-size: variables.$h5;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: variables.$p18;
+    }
+  }
+}
+
+.special-offer {
+  .offer-detail {
+    margin-bottom: 14px;
+
+    h4 {
+      font-size: variables.$h4;
+    }
+
+    h5 {
+      font-size: variables.$h5;
+    }
+
+    .price {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      font-size: variables.$h4;
+      font-weight: variables.$semi-bold;
+
+      .pd-slashprice {
+        color: variables.$neutral-800;
+      }
+    }
+
+    p {
+      font-size: variables.$p18;
+      color: variables.$neutral-200;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

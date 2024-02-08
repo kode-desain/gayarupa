@@ -1,1 +1,115 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Popins", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 64px 0;
+}
+section .container {
+  position: relative;
+  padding: 0 80px;
+}
+section .container .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section .container .flex-container .left-column, section .container .flex-container .right-column {
+  max-width: 50%;
+}
+section .container .flex-container .left-column {
+  display: flex;
+  flex-direction: column;
+}
+section .container .flex-container .left-column .hero-caption {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 24px;
+}
+section .container .flex-container .left-column .hero-title {
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 24px;
+}
+section .container .flex-container .left-column .hero-text {
+  width: 80%;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+section .container .flex-container .right-column .hero-image img {
+  width: 100%;
+}
+section.feature .flex-container {
+  align-items: flex-end;
+  gap: 24px;
+}
+section.special-offer .flex-container {
+  gap: 126px;
+}
+section.special-offer * {
+  margin-bottom: 24px;
+}
+section.special-offer .offer-detail h4 {
+  font-size: 32px;
+}
+section.special-offer .offer-detail h5 {
+  font-size: 24px;
+}
+
+.heading {
+  margin-bottom: 64px;
+}
+.heading .heading-title h3 {
+  font-size: 32px;
+}
+.heading .heading-tagline p {
+  font-size: 24px;
+}
+
+.feature-card {
+  width: auto;
+}
+.feature-card img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.feature-card .label h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+.feature-card .label p {
+  font-size: 18px;
+}
+
+.special-offer .offer-detail {
+  margin-bottom: 14px;
+}
+.special-offer .offer-detail h4 {
+  font-size: 32px;
+}
+.special-offer .offer-detail h5 {
+  font-size: 24px;
+}
+.special-offer .offer-detail .price {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.special-offer .offer-detail .price .pd-slashprice {
+  color: hsl(228, 8%, 90%);
+}
+.special-offer .offer-detail p {
+  font-size: 18px;
+  color: hsl(228, 8%, 30%);
+}/*# sourceMappingURL=style.css.map */
