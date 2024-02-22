@@ -1,1 +1,280 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Popins", sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 64px 0;
+}
+section .container {
+  position: relative;
+  padding: 0 80px;
+}
+section .container .heading {
+  margin-bottom: 64px;
+}
+section .container .heading .heading-title h3 {
+  font-size: 32px;
+  margin-bottom: 14px;
+}
+section .container .heading .heading-tagline p {
+  font-size: 18px;
+}
+section .container .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section .container .flex-container .left-column, section .container .flex-container .right-column {
+  max-width: 50%;
+}
+section .container .flex-container .left-column {
+  display: flex;
+  flex-direction: column;
+}
+section .container .flex-container .left-column .hero-caption {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 24px;
+}
+section .container .flex-container .left-column .hero-title {
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 24px;
+}
+section .container .flex-container .left-column .hero-text {
+  width: 80%;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+section .container .flex-container .right-column .hero-image img {
+  width: 100%;
+}
+section.feature .flex-container {
+  align-items: flex-end;
+  gap: 24px;
+}
+section.feature .flex-container .feature-card {
+  width: auto;
+}
+section.feature .flex-container .feature-card img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+section.feature .flex-container .feature-card .label h3 {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+section.feature .flex-container .feature-card .label p {
+  font-size: 18px;
+}
+section.special-offer .flex-container {
+  gap: 126px;
+}
+section.special-offer .flex-container .offer-detail h4, section.special-offer .flex-container .offer-detail h5, section.special-offer .flex-container .price {
+  margin-bottom: 24px;
+}
+section.special-offer .flex-container .offer-detail {
+  margin-bottom: 14px;
+}
+section.special-offer .flex-container .offer-detail h4 {
+  font-size: 32px;
+}
+section.special-offer .flex-container .offer-detail h5 {
+  font-size: 24px;
+}
+section.special-offer .flex-container .offer-detail .price {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 32px;
+  font-weight: 600;
+}
+section.special-offer .flex-container .offer-detail .price .pd-slashprice {
+  color: hsl(228, 8%, 90%);
+}
+section.special-offer .flex-container .offer-detail p {
+  font-size: 18px;
+  color: hsl(228, 8%, 30%);
+}
+section.testimonial .flex-container {
+  gap: 24px;
+}
+section.testimonial .flex-container .user-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+section.contact .flex-container {
+  gap: 80px;
+}
+section.contact .left-column .telp, section.contact .left-column .email, section.contact .left-column .address {
+  margin-bottom: 24px;
+}
+section.contact .left-column .telp h6, section.contact .left-column .email h6, section.contact .left-column .address h6 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+section.contact .left-column .telp p, section.contact .left-column .email p, section.contact .left-column .address p {
+  font-size: 18px;
+}
+section.contact .right-column {
+  max-width: 100%;
+}
+section.contact .right-column iframe {
+  width: 480px;
+  height: 320px;
+}
+
+footer {
+  padding: 64px 0;
+}
+footer .container {
+  padding: 0 80px;
+}
+footer .container .column-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+footer .container .column-wrapper .cc-logo {
+  width: 32%;
+}
+footer .container .column-wrapper .cc-logo img {
+  margin-bottom: 18px;
+}
+footer .container .column-wrapper .footer-link {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+footer .container .column-wrapper .footer-link .column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer .container .column-wrapper .footer-link .column .column-name p {
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .container .column-wrapper .footer-link .column .column-list {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .column-wrapper .footer-link .column .column-list a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  section .container {
+    padding: 0 24px;
+  }
+  section .container .flex-container {
+    flex-direction: column;
+  }
+  section.hero {
+    height: 90vh;
+  }
+  section.hero .container .flex-container {
+    align-items: center;
+    text-align: center;
+  }
+  section.hero .container .flex-container .left-column {
+    max-width: 100%;
+  }
+  section.hero .container .flex-container .left-column .hero-caption {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 24px;
+  }
+  section.hero .container .flex-container .left-column .hero-title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  section.hero .container .flex-container .left-column .hero-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  section.hero .container .flex-container .right-column {
+    display: none;
+  }
+  section.feature .flex-container {
+    align-items: start;
+  }
+  section.feature .flex-container .feature-card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+  }
+  section.feature .flex-container .feature-card img {
+    width: 32%;
+  }
+  section.feature .flex-container .feature-card .label h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  section.special-offer .flex-container {
+    gap: 24px;
+  }
+  section.special-offer .flex-container .left-column, section.special-offer .flex-container .right-column {
+    max-width: 100%;
+  }
+  section.special-offer .flex-container .left-column img, section.special-offer .flex-container .right-column img {
+    width: 100%;
+  }
+  section.special-offer .flex-container .offer-detail {
+    margin-bottom: 14px;
+  }
+  section.special-offer .flex-container .offer-detail h4 {
+    font-size: 32px;
+  }
+  section.special-offer .flex-container .offer-detail h5 {
+    font-size: 18px;
+  }
+  section.contact .flex-container {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  section.contact .flex-container .left-column, section.contact .flex-container .right-column {
+    max-width: 100%;
+  }
+  section.contact .flex-container .left-column iframe, section.contact .flex-container .right-column iframe {
+    width: 100%;
+    height: 320px;
+  }
+  footer .container {
+    padding: 0 24px;
+  }
+  footer .container .column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  footer .container .column-wrapper .cc-logo {
+    width: 100%;
+    gap: 16px;
+  }
+  footer .container .column-wrapper .footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */
