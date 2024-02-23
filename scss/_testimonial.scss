@@ -1,0 +1,42 @@
+.testimonial {
+    .heading {
+      margin-bottom: 64px;
+      .heading-title{
+        h3 {
+          font-size: 24px;
+          margin-bottom: 14px;
+        }
+  
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      .testimonial-card {
+        width: 100%;
+        .user-detail {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 24px;
+          margin-bottom: 24px;
+  
+          img {
+            width: 54px;
+          }
+          h3 {
+            font-size: 16px;
+            font-weight: variables.$semi-bold;
+          }
+        }
+        .testimonial-message {
+          font-size: 16px;
+          font-weight: variables.$regular;
+        }
+      }
+    }
+  }

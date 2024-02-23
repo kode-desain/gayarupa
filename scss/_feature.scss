@@ -1,0 +1,65 @@
+.feature {
+    .heading {
+      margin-bottom: 64px;
+  
+      &-title {
+        h3 {
+          font-size: 24px;
+          margin-bottom: 14px;
+        }
+      }
+  
+      &-tagline {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+  
+      .feature-card {
+        width: 100%;
+  
+        img {
+          width: 100%;
+          margin-bottom: 48px;
+        }
+  
+        .label {
+          h3 {
+            font-size: 24px;
+            margin-bottom: 14px;
+          }
+  
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  
+
+@media screen and (max-width: 768px) {
+  .feature {
+    .flex-container {
+      flex-direction: column;
+
+      .feature-card {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          width: 40%;
+        }
+      }
+    }
+  }
+  
+}

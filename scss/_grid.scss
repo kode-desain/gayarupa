@@ -1,0 +1,31 @@
+.wrap {
+    display: grid;
+    grid-template-areas: "header header"
+                          "main nav"
+                          "main aside"
+                          "footer footer";
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    .aheader {
+        background-color: blue($color: #1f3ba2);
+        grid-area: header;
+    }
+    main {
+        background-color: red;
+        grid-area: main;
+    }
+    nav {
+        background-color: yellow;
+        grid-area: nav;
+    }
+    aside {
+        background-color: aqua;
+        grid-area: aside;
+    }
+    .cfooter {
+        background-color: blueviolet;
+        grid-area: footer;
+    }
+
+}
