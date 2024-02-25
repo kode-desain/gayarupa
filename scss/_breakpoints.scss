@@ -82,6 +82,11 @@ $breakpoints: (
         display: flex;
         flex-direction: row;
         gap: variables.$s-24; 
+        .label {
+          h3 {
+            font-size: variables.$h5;
+          }
+        }
 
         img {
           width: 32%;
@@ -111,6 +116,13 @@ $breakpoints: (
 
 .testimonial .flex-container {
   flex-wrap: wrap;
+  .testimonial-card {
+    .user-detail {
+      img {
+        width: 64px;
+    }
+    }
+  }
 }
 
 @include sm {
@@ -157,9 +169,20 @@ $breakpoints: (
           img {
             width: 100%;
           }
+
+          .label {
+            h3 {
+              font-size: variables.$h5;
+              margin-bottom: variables.$s-14;
+            }
+          }
         }
       }
     }
+  }
+
+  .special-offer {
+    gap: 126px;
   }
 
   .testimonial .flex-container {
@@ -170,7 +193,7 @@ $breakpoints: (
     .column-wrapper {
       flex-direction: row;
       .cc-logo {
-        width: 100%;
+        width: 24%;
       }
       .footer-link {
         flex-direction: row;

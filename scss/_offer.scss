@@ -1,5 +1,5 @@
 .special-offer {
-  gap: 126px; // Menggunakan variabel untuk gap
+  gap: 126px;
   .special-offer-left {
     width: 100%;
   }
@@ -9,15 +9,15 @@
         margin-bottom: variables.$s-14;
       }
       h4 {
-        font-size: variables.$h3;
+        font-size: variables.$h4;
         font-weight: variables.$semi-bold; 
       }
       h5 {
-        font-size: variables.$h4;
+        font-size: variables.$h5;
         font-weight: variables.$medium; 
       }
       .price {
-        font-size: variables.$h3;
+        font-size: variables.$h4;
         font-weight: variables.$semi-bold;
         .pd-slashprice {
           color: #d9d9d9;

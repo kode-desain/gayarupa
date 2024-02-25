@@ -42,7 +42,7 @@ body {
   margin-bottom: 64px;
 }
 .heading-title h3 {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 16px;
 }
 .heading-tagline p {
@@ -125,15 +125,15 @@ body {
   margin-bottom: 14px;
 }
 .special-offer .special-offer-right .offer-detail h4 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 600;
 }
 .special-offer .special-offer-right .offer-detail h5 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
 }
 .special-offer .special-offer-right .offer-detail .price {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 600;
 }
 .special-offer .special-offer-right .offer-detail .price .pd-slashprice {
@@ -270,6 +270,9 @@ body {
     flex-direction: row;
     gap: 24px;
   }
+  .feature .flex-container .feature-card .label h3 {
+    font-size: 24px;
+  }
   .feature .flex-container .feature-card img {
     width: 32%;
   }
@@ -289,6 +292,9 @@ body {
 }
 .testimonial .flex-container {
   flex-wrap: wrap;
+}
+.testimonial .flex-container .testimonial-card .user-detail img {
+  width: 64px;
 }
 
 @media (min-width: 480px) {
@@ -328,6 +334,13 @@ body {
   .container .feature .flex-container .feature-card img {
     width: 100%;
   }
+  .container .feature .flex-container .feature-card .label h3 {
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .special-offer {
+    gap: 126px;
+  }
   .testimonial .flex-container {
     flex-wrap: nowrap;
   }
@@ -335,7 +348,7 @@ body {
     flex-direction: row;
   }
   .footer .column-wrapper .cc-logo {
-    width: 100%;
+    width: 24%;
   }
   .footer .column-wrapper .footer-link {
     flex-direction: row;
