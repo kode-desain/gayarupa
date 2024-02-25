@@ -1,7 +1,9 @@
 .contact {
   gap: 80px;
   .contact-left {
-    .telp, .email, .address {
+    .telp,
+    .email,
+    .address {
       margin-bottom: variables.$s-24;
       .head {
         margin-bottom: 4px;
@@ -26,4 +28,3 @@
     }
   }
 }
-  

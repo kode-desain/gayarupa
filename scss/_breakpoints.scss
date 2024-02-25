@@ -1,3 +1,4 @@
+
 $breakpoints: (
   "xs": 0,
   "sm": 480px,
@@ -37,23 +38,146 @@ $breakpoints: (
 }
 
 @mixin breakpoint($bp: 0) {
-  @media (min-width: $bp) {
+  @media (min-width: variables.$bp) {
     @content;
   }
 }
 
-
-@include xs {}
-
-@include sm {
+@include xs {
   .container {
-    padding: 0 32px;
+    padding: 0 variables.$s-32;
+  }
+  .hero {
+    height: 90vh;
+    align-items: center;
+
+    .hero-left {
+      text-align: center;
+      .hero-title {
+        font-size: variables.$h3; 
+        line-height: normal;
+      }
+      .hero-text {
+        width: 100%;
+      }
+    }
+    .hero-right {
+      display: none;
+    }
+  }
+  .special-offer {
+    gap: variables.$s-24;
+    .special-offer-left {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .feature {
+    .flex-container {
+      flex-direction: column;
+
+      .feature-card {
+        display: flex;
+        flex-direction: row;
+        gap: variables.$s-24; 
+
+        img {
+          width: 32%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .column-wrapper {
+      flex-direction: column;
+      .cc-logo {
+        width: 100%;
+      }
+      .footer-link {
+        flex-direction: column;
+        .column {
+          .column-list {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
   }
 }
 
-@include md {}
+.testimonial .flex-container {
+  flex-wrap: wrap;
+}
 
-@include lg {}
+@include sm {
+  .container {
+    padding: 0 variables.$s-32; 
+  }
+}
 
-@include xl {}
+@include md {
+}
 
+@include lg {
+  .container {
+    padding: 0 variables.$s-80;
+
+    .hero {
+      height: 90vh;
+      align-items: center;
+  
+      .hero-left {
+        text-align: left;
+        .hero-title {
+          font-size: variables.$h3; 
+          line-height: normal;
+        }
+        .hero-text {
+          width: 100%;
+        }
+      }
+      .hero-right {
+        display: block;
+      }
+    }
+
+    .feature {
+      .flex-container {
+        flex-direction: row;
+
+        .feature-card {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial .flex-container {
+    flex-wrap: nowrap;
+  }
+
+  .footer {
+    .column-wrapper {
+      flex-direction: row;
+      .cc-logo {
+        width: 100%;
+      }
+      .footer-link {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@include xl {
+}

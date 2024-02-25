@@ -1,56 +1,31 @@
 .hero {
-    .hero-left {
+  .hero-left {
     .hero-caption {
-        font-size: 12px;
-        line-height: 14px;
-        margin-bottom: 24px;
+      font-size: variables.$p12; 
+      line-height: variables.$p14; 
+      margin-bottom: variables.$s-24; 
     }
 
     .hero-title {
-        font-size: 48px;
-        line-height: 64px;
-        margin-bottom: 24px;
+      font-size: variables.$h1; 
+      line-height: variables.$h1; 
+      margin-bottom: variables.$s-24;
     }
 
     .hero-text {
-        width: 80%;
-        font-size: 16px;
-        line-height: 26px;
-        margin-bottom: 24px;
+      width: 80%;
+      font-size: variables.$p16; 
+      line-height: 26px;
+      margin-bottom: variables.$s-24;
     }
-    }
-
-    .hero-right {
-    .hero-image {
-        img {
-            width: 72%;
-            float: right;
-        }
-    }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 0 32px;
-    }
-    .hero {
-        height: 90vh;
-        align-items: center;
-
-        .hero-left {
-            text-align: center;
-            .hero-title {
-                font-size: 32px;
-                line-height: normal;
-            }
-            .hero-text {
-                width: 100%;
-            }
-        }
-        .hero-right {
-            display: none;
-        }
-    }
-    
   }
+
+  .hero-right {
+    .hero-image {
+      img {
+        width: 72%;
+        float: right;
+      }
+    }
+  }
+}

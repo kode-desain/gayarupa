@@ -1,34 +1,36 @@
+
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$s-32;
+  padding: variables.$s-64 0;
+  .column-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-    padding: 64px 0;
-    .column-wrapper {
+    flex-direction: row;
+    gap: variables.$s-80;
+    .cc-logo {
+      width: variables.$s-32;
+      gap: variables.$s-16;
+      img {
+        margin-bottom: variables.$s-16;
+      }
+    }
+    .footer-link {
       display: flex;
       flex-direction: row;
-      gap: 80px;
-      .cc-logo {
-        width: 32%;
-        gap: 16px;
-      }
-      .footer-link {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
-        .column {
-          .column-name {
-            font-size: variables.$p16;
-            font-weight: variables.$semi-bold;
-            margin-bottom: variables.$s-24;
-          }
-          .column-list a {
-            color: #000000;
-            text-decoration: none;
-            font-size: 15px;
-          }
+      gap: variables.$s-24;
+      .column {
+        .column-name {
+          font-size: variables.$p16;
+          font-weight: variables.$semi-bold;
+          margin-bottom: variables.$s-4;
         }
-      }  
+        .column-list a {
+          color: #000000;
+          text-decoration: none;
+          font-size: variables.$s-14;
+        }
+      }
     }
-    
   }
-  
+}

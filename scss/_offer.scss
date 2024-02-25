@@ -1,34 +1,32 @@
 .special-offer {
-    gap: 126px;
-    .special-offer-left {
-      width: 100%;
-    }
-    .special-offer-right {
-      .offer-detail {
-        * {
-          margin-bottom: 14px
-        };
-        h4 {
-          font-size: 32px;
-          font-weight: variables.$semi-bold;
+  gap: 126px; // Menggunakan variabel untuk gap
+  .special-offer-left {
+    width: 100%;
+  }
+  .special-offer-right {
+    .offer-detail {
+      * {
+        margin-bottom: variables.$s-14;
+      }
+      h4 {
+        font-size: variables.$h3;
+        font-weight: variables.$semi-bold; 
+      }
+      h5 {
+        font-size: variables.$h4;
+        font-weight: variables.$medium; 
+      }
+      .price {
+        font-size: variables.$h3;
+        font-weight: variables.$semi-bold;
+        .pd-slashprice {
+          color: #d9d9d9;
         }
-        h5 {
-          font-size: 24px;
-          font-weight: variables.$medium;
-        }
-        .price {
-            font-size: 32px;
-            font-weight: variables.$semi-bold;
-          .pd-slashprice {
-            color: #D9D9D9;
-          }
-        }
-        p {
-          font-size: 18px;
-          color: variables.$neutral-200;
-        }
+      }
+      p {
+        font-size: variables.$p18; 
+        color: variables.$neutral-200;
       }
     }
   }
-  
-  
+}
