@@ -1,0 +1,30 @@
+
+.feature {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+
+    .feature-card {
+      width: 100%;
+
+      img {
+        width: 100%;
+        margin-bottom: variables.$s-48;
+      }
+
+      .label {
+        h3 {
+          font-size: variables.$h3;
+          margin-bottom: variables.$s-14;
+        }
+
+        p {
+          font-size: variables.$p18;
+        }
+      }
+    }
+  }
+}

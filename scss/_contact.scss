@@ -1,0 +1,30 @@
+.contact {
+  gap: 80px;
+  .contact-left {
+    .telp,
+    .email,
+    .address {
+      margin-bottom: variables.$s-24;
+      .head {
+        margin-bottom: 4px;
+      }
+      h6 {
+        font-size: variables.$h5;
+        font-weight: variables.$semi-bold;
+        margin-bottom: variables.$s-4;
+      }
+
+      p {
+        font-size: variables.$p18;
+      }
+    }
+  }
+  .contact-right {
+    .maps {
+      iframe {
+        width: 100%;
+        height: 356px;
+      }
+    }
+  }
+}

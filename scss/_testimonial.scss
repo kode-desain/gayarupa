@@ -1,0 +1,29 @@
+.testimonial {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: variables.$s-24; 
+    .testimonial-card {
+      width: 100%;
+      .user-detail {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: variables.$s-24; 
+        margin-bottom: variables.$s-24; 
+
+        img {
+          width: 100px;
+        }
+        h3 {
+          font-size: variables.$p16;
+          font-weight: variables.$semi-bold; 
+        }
+      }
+      .testimonial-message {
+        font-size: variables.$p16;
+        font-weight: variables.$regular; 
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: variables.$s-80; 
+  
+    .logo {
+      font-size: variables.$h5;
+    }
+  
+    .menus {
+      margin-right: auto;
+  
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: variables.$s-48; 
+        padding-left: variables.$s-80;
+  
+        li {
+          list-style: none;
+          font-size: variables.$p16;
+        }
+      }
+    }
+  }
+  

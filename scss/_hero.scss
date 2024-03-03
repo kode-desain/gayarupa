@@ -1,0 +1,40 @@
+.hero {
+  .hero-left {
+    .hero-caption {
+      font-size: variables.$p12; 
+      line-height: variables.$p14; 
+      margin-bottom: variables.$s-24; 
+    }
+
+    .hero-title {
+      font-size: variables.$h1; 
+      line-height: variables.$h1; 
+      margin-bottom: variables.$s-24;
+    }
+
+    .hero-text {
+      width: 80%;
+      font-size: variables.$p16; 
+      line-height: 26px;
+      margin-bottom: variables.$s-40;
+    }
+
+    .button {
+      padding: 12px 24px;
+      border: 1px solid variables.$primary-300;
+      border-radius: 4px;
+      font-size: 16px;
+      color: variables.$primary-300;
+      text-decoration: none;
+    }
+  }
+
+  .hero-right {
+    .hero-image {
+      img {
+        width: 72%;
+        float: right;
+      }
+    }
+  }
+}
