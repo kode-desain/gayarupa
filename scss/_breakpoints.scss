@@ -95,23 +95,12 @@ $breakpoints: (
     }
   }
 
-  .footer {
-    .column-wrapper {
-      flex-direction: column;
-      .cc-logo {
-        width: 100%;
-      }
-      .footer-link {
-        flex-direction: column;
-        .column {
-          .column-list {
-            display: flex;
-            flex-direction: column;
-          }
-        }
-      }
-    }
+
+  section.product {
+    display: grid;
+    grid-template-columns: 1fr;
   }
+
 }
 
 .testimonial .flex-container {
@@ -125,10 +114,28 @@ $breakpoints: (
   }
 }
 
-@include sm {
-  .container {
-    padding: 0 variables.$s-32; 
+
+
+.footer {
+  .column-wrapper {
+    flex-direction: column;
+    .cc-logo {
+      width: 100%;
+    }
+    .footer-link {
+      flex-direction: column;
+      .column {
+        .column-list {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
   }
+}
+
+@include sm {
+  
 }
 
 @include md {
@@ -189,6 +196,12 @@ $breakpoints: (
     flex-wrap: nowrap;
   }
 
+
+
+  section.product {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .footer {
     .column-wrapper {
       flex-direction: row;
@@ -203,4 +216,7 @@ $breakpoints: (
 }
 
 @include xl {
+  section.product {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

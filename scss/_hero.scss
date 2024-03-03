@@ -16,7 +16,16 @@
       width: 80%;
       font-size: variables.$p16; 
       line-height: 26px;
-      margin-bottom: variables.$s-24;
+      margin-bottom: variables.$s-40;
+    }
+
+    .button {
+      padding: 12px 24px;
+      border: 1px solid variables.$primary-300;
+      border-radius: 4px;
+      font-size: 16px;
+      color: variables.$primary-300;
+      text-decoration: none;
     }
   }
 
