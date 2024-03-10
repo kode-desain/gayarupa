@@ -104,6 +104,12 @@ section.page-title div.title {
   list-style: none;
   font-size: 16px;
 }
+.navbar .button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: hsl(150, 20%, 35%);
+  text-decoration: none;
+}
 
 .hero .hero-left .hero-caption {
   font-size: 12px;

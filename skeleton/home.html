@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .skeleton_hero-image {
+            width: 517px;
+            height: 372px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 2s infinite reverse;
+            float: right;
+        }
+
+        .skeleton_hero-caption {
+            width: 300px;
+            height: 24px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+        .skeleton_hero-title {
+            width: 600px;
+            height: 40px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+        .skeleton_hero-text {
+            width: 400px;
+            height: 20px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+        }
+        .skeleton_button {
+            width: 116px;
+            height: 40px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-top: 40px;
+        }
+
+        .heading .skeleton_heading-title div {
+            width: 125px;
+            height: 38px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+        .heading .skeleton_heading-tagline div:nth-last-child(2) {
+            width: 419px;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 4px;
+        }
+        .heading .skeleton_heading-tagline div:nth-last-child(1) {
+            width: 124px;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+        }
+
+        .flex-container .skeleton_feature-card {
+            width: 100%;
+            height: 300px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+
+        .skeleton_image-feature {
+            width: 100%;
+            height: 300px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+
+        .skeleton_title {
+            width: 100%;
+            height: 24px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+
+        .skeleton_info {
+            width: 100%;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+
+        .sekelaton_image-product {
+            width: 100%;
+            height: 300px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+
+        .skeleton_heading-title {
+            width: 100%;
+            height: 24px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+        .sekelaton_product-title {
+            width: 100%;
+            height: 24px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+        .sekelaton_pd-slashprice {
+            width: 100%;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+        .sekelaton_pd-price {
+            width: 100%;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+        }
+
+        .sekelaton_paragraph {
+            width: 100%;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+        }
+        .sekelaton_button {
+            width: 116px;
+            height: 40px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-top: 40px;
+        }
+
+        .sekeleton_image {
+            width: 64px;
+            aspect-ratio: 1 / 1;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+        .sekelaton_username {
+            width: 100%;
+            height: 24px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+        .sekelaton_testimonial-message div {
+            width: 100%;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+
+        .sekelaton_head {
+            width: 100%;
+            height: 24px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 16px;
+        }
+        .sekelaton_head div {
+            width: 100%;
+            height: 16px;
+            background-color:  rgba(205, 199, 199, 0.5);
+            animation: skeleton 6s infinite reverse;
+            margin-bottom: 24px;
+        }
+
+
+
+
+
+@keyframes skeleton {
+    0% {
+        background-color: rgba(205, 199, 199, 0.5);
+    }
+    100% {
+        background-color: rgba(205, 199, 199, 1);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <header class="header grid">
+                <nav class="navbar">
+                <div class="logo">
+                    <img src="../src/icon/Logo.svg" alt="Gayarupa">
+                </img>
+                <div class="burger-menu">
+                    <span></span>
+                </div>
+                <div class="menus">
+                    <ul>
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>About</li>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                    <button>
+                        Login
+                    </button>
+                </nav>     
+            </header>
+
+            <section class="hero grid">
+                <div class="hero-left">
+                <div class="sekeleton_hero-caption"></div>
+                <div class="sekeleton_hero-title"></div>
+                <div class="sekeleton_hero-title"></div>
+                <div class="sekeleton_hero-text"></div>
+                <div class="sekeleton_button"></div>
+                </div>
+                <div class="hero-right">
+                <div class="sekeleton_hero-image">
+                </div>
+                </div>
+            </section>
+
+            <section class="feature grid">
+                <div class="heading">
+                    <div class="sekeleton_heading-title">
+                        <div></div>
+                    </div>
+                    <div class="sekeleton_heading-tagline">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="flex-container">
+
+                    <div class="sekelaton_feature-card feature-card">
+                        <div class="sekeleton_image-feature image-feature"></div>
+                        <div class="label">
+                            <div class="sekeleton_title title"></div>
+                            <div class="sekeleton_info info"></div>
+                        </div>
+                    </div>
+                    <div class="sekelaton_feature-card feature-card">
+                        <div class="sekeleton_image-feature image-feature"></div>
+                        <div class="label">
+                            <div class="sekeleton_title title"></div>
+                            <div class="sekeleton_info info"></div>
+                        </div>
+                    </div>
+                    <div class="sekelaton_feature-card feature-card">
+                        <div class="sekeleton_image-feature image-feature"></div>
+                        <div class="label">
+                            <div class="sekeleton_title title"></div>
+                            <div class="sekeleton_info info"></div>
+                        </div>
+                    </div>
+                    <div class="sekelaton_feature-card feature-card">
+                        <div class="sekeleton_image-feature image-feature"></div>
+                        <div class="label">
+                            <div class="sekeleton_title title"></div>
+                            <div class="sekeleton_info info"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+          <section class="special-offer grid"> 
+            <div class="special-offer-left">
+              <div class="sekelaton_image-product"></div>
+            </div>
+            <div class="special-offer-right">
+              <div class="offer-detail">
+                  <div class="sekeleton_heading-title heading-title"></div>
+                  <div class="sekelaton_product-title product-title"></div>
+                  <div class="price">
+                    <div class="sekeleton_pd-slashprice pd-slashprice"></div>
+                    <div class="sekelaton_pd-price pd-price"></div>
+                  </div>
+                  <div class="sekelaton_paragraph"></div>
+                  <div class="sekelaton_button button"></div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial grid">
+            <div class="heading">
+              <div class="sekeleton_heading-title">
+                <div></div>
+              </div>
+              <div class="sekeleton_heading-tagline">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="flex-container">
+              
+              <div class="testimonial-card">
+                <div class="user-detail">
+                  <div class="sekeleton_image"></div>
+                  <div class="sekelaton_username"></div>
+                </div>
+                <div class="sekelaton_testimonial-message">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="user-detail">
+                    <div class="sekeleton_image"></div>
+                    <div class="sekelaton_username"></div>
+                </div>
+                <div class="sekelaton_testimonial-message">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="user-detail">
+                    <div class="sekeleton_image"></div>
+                    <div class="sekelaton_username"></div>
+                </div>
+                <div class="sekelaton_testimonial-message">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+
+          <section class="contact grid">
+            
+            <div class="contact-left">
+                <div class="heading">
+                    <div class="sekeleton_heading-title">
+                        <div></div>
+                    </div>
+                    <div class="sekeleton_heading-tagline">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+              <div class="telp">
+                <div class="sekelaton_head head"></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="email">
+                <div class="sekelaton_head head"></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="address">
+                <div class="sekelaton_head head"></div>
+                <div></div>
+                <div></div>
+              </div>      
+            </div>
+
+            <div class="contact-right">
+              <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83438.53602796975!2d106.94127849608965!3d-6.153048347505054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a20ae0b56b8cd%3A0xe217216a0466dfcd!2sKec.%20Tarumajaya%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1707444087553!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+        </section>
+        <footer class="footer grid">
+          <div class="column-wrapper">
+            <div class="cc-logo">
+              <img src="src/icon/Logo.svg" alt="Logo">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+            </div>
+            <div class="footer-link">
+              <div class="column">
+                <div class="column-name">
+                  <p>Kebijakan Privasi</p>
+                </div>
+                <div class="column-list">
+                  <a href="#">Pengupulan data</a>
+                  <a href="#">Penggunaan cookie</a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-name">
+                  <p>Syarat dan Ketentuan</p>
+                </div>
+                <div class="column-list">
+                  <a href="#">Persyaratan penggunaan</a>
+                  <a href="#">Ketentuan pembelian</a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-name">
+                  <p>Pusat Bantuan</p>
+                </div>
+                <div class="column-list">
+                  <a href="#">FAQ</a>
+                  <a href="#">Panduan Pembelian</a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="column-name">
+                  <p>Karir</p>
+                </div>
+                <div class="column-list">
+                  <a href="#">Lowongan pekerajan</a>
+                  <a href="#">Formulir aplikasi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="credit-bar">
+            <div class="copyright">
+              <p>&copy; gayarupa 2024. All Rights Reserved.</p>
+            </div>
+            <div class="social-media"></div>
+          </div>
+        </footer>
+        </div>
+    </div>
+
+</body>
+</html>
