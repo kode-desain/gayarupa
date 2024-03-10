@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .progress-container {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <script>
+        function move() {
+  const progressBar = document.getElementById("progressBar");
+  let width = 0;
+  const interval = setInterval(frame, 10);
+
+  function frame() {
+    if (width >= 100) {
+      clearInterval(interval);
+    } else {
+      width++;
+      progressBar.style.width = width + "%";
+      progressBar.innerHTML = width + "%";
+    }
+  }
+}
+
+move();
+
+      </script>
+</body>
+</html>
