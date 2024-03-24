@@ -35,7 +35,7 @@ section {
     grid-template-columns: 2fr 3fr;
     }
 
-    &.contact {
+    &.contact, &.product-briefing {
     grid-template-columns: 1fr 1fr;
     }
 
@@ -94,7 +94,7 @@ section.page-title {
         }
     }
 
-    div.title {
+    div.title h1 {
         font-size: variables.$h3;
         font-weight: variables.$medium;
         padding-bottom: 28px;

@@ -1,0 +1,22 @@
+.order-complated {
+    justify-items: center;
+    text-align: center;
+
+    .wrapper {
+        img {
+            margin-bottom: 64px;
+        }
+
+        h2 {
+            font-size: variables.$h2;
+            font-weight: variables.$medium;
+            margin-bottom: 64px;
+        }
+        p {
+            width: 600px;
+            margin: 0 auto;
+            margin-bottom: 64px;
+        }
+    }
+
+}

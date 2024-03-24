@@ -30,7 +30,7 @@ body {
 .container section.special-offer {
   grid-template-columns: 2fr 3fr;
 }
-.container section.contact {
+.container section.contact, .container section.product-briefing {
   grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 768px) {
@@ -75,7 +75,7 @@ section.page-title .breadcrumbs ul li:not(:last-child):after {
   content: " / ";
   margin: 0 8px;
 }
-section.page-title div.title {
+section.page-title div.title h1 {
   font-size: 40px;
   font-weight: 500;
   padding-bottom: 28px;
@@ -499,4 +499,22 @@ section.product .product-card .product-details .action .add-to-cart:hover {
   background-color: #ffffff;
   border: 2px solid #000000;
   color: #000000;
+}
+
+.order-complated {
+  justify-items: center;
+  text-align: center;
+}
+.order-complated .wrapper img {
+  margin-bottom: 64px;
+}
+.order-complated .wrapper h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+.order-complated .wrapper p {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 64px;
 }/*# sourceMappingURL=style.css.map */
